@@ -14,7 +14,7 @@ export default function TripCard({ trip }: TripCardProps) {
       <article className={styles.cardContainer}>
         <div className={styles.card}>
           <figure>
-            <img src={images[0].desktop} />
+            <img src={images?.[0]?.desktop} />
           </figure>
           <section>
             <div className={styles.details}>
@@ -27,10 +27,10 @@ export default function TripCard({ trip }: TripCardProps) {
               <main>
                 <div className={styles.cardSpecificationsList}>
                   <ul className={styles.list}>
-                    {highlights.slice(0, 4).map((h, index) => (
+                    {highlights?.slice(0, 4).map((h, index) => (
                       <li key={index}>{h.title}</li>
                     ))}
-                    {highlights.length > 4 && (
+                    {highlights?.length > 4 && (
                       <li>+{includes.length - 4} más</li>
                     )}
                   </ul>

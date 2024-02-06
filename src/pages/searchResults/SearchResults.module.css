@@ -1,0 +1,12 @@
+.tripListContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.tripList {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 100px;
+}
